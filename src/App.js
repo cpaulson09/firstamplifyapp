@@ -11,6 +11,7 @@ function App() {
   const [notes, setNotes] = useState([]);
   const [formData, setFormData] = useState(initialFormState);
 
+  // will run after render, use to fetch data
   useEffect(() => {
     fetchNotes();
   }, []);
@@ -61,15 +62,17 @@ function App() {
         placeholder="Note name"
         value={formData.name}
       />
+      &nbsp;
       <input
         onChange={e => setFormData({ ...formData, 'description': e.target.value})}
         placeholder="Note description"
         value={formData.description}
       />
+      &nbsp;
       <input
         type="file"
         onChange={onChange}
-      />
+      /> <br/><br/>
       <button onClick={createNote}>Create Note</button>
       <div style={{marginBottom: 30}}>
       {
