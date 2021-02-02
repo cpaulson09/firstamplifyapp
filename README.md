@@ -1,5 +1,7 @@
 # Getting Started with Create React App
 
+First experience deploying a React App to AWS amplify 
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
